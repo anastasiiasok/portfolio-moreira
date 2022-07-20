@@ -1,6 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Grape+Nuts&family=Heebo:wght@100;300;400;500;700;800;900&display=swap');
+
 *, *::after, *::before {
 	box-sizing: inherit;
 
+}
+
+:root.theme-light {
+
+}
+
+:root.theme-dark {
+	background-color: black;
+	color: white;
 }
 
 html {
@@ -10,6 +21,8 @@ html {
 
 body {
 	margin: 0;
+	/* font-family: 'Grape Nuts', cursive; */
+	font-family: 'Heebo', sans-serif;
 }
 
 button {
@@ -32,3 +45,53 @@ img {
 	margin: 0 auto;
 	padding: 0 10px;
 }
+
+/* .header */
+
+.header__wrapper {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 100px;
+}
+
+.header__nav {
+	margin-left: auto;
+	display: flex;
+	gap: 40px;
+}
+
+.header__nav-link {
+	font-weight: 300;
+	text-decoration: none;
+	color: inherit;
+	text-transform: uppercase;
+}
+
+.header__logo {
+	min-width: 100px;
+	max-width: 100px;
+	height: 100px;
+	position: relative;
+}
+
+.header__logo-theme {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	transition-duration: 0.5s;
+	transition-timing-function: linear;
+	transition-property: opacity;
+}
+
+.theme-light .header__logo-theme_dark {
+	opacity: 0;
+}
+
+.theme-dark .header__logo-theme_light {
+	opacity: 0;
+}
+
+/* .header */
