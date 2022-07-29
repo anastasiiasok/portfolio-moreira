@@ -1,0 +1,2 @@
+function e(e,t){document.documentElement.classList.remove(e),document.documentElement.classList.add(t)}document.querySelector(".header__dark-mode-wrapper")?.addEventListener("click",(function(t){const m=document.documentElement.classList.contains("theme-light")?"theme-light":document.documentElement.classList.contains("theme-dark")?"theme-dark":"theme-light";"theme-light"===m?e("theme-light","theme-dark"):"theme-dark"===m&&e("theme-dark","theme-light")}));
+//# sourceMappingURL=index.76902991.js.map

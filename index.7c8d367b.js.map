@@ -1,1 +1,0 @@
-{"mappings":"AAEAA,QAAQC,IAFY","sources":["src/script.ts"],"sourcesContent":["const num: number = 1;\n\nconsole.log(num);\n"],"names":["console","log"],"version":3,"file":"index.7c8d367b.js.map"}
