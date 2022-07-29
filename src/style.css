@@ -5,6 +5,11 @@
 
 }
 
+/* obrashenie k tegu html, no ono vazhnee */
+:root {
+
+}
+
 :root.theme-light {
 
 }
@@ -66,6 +71,7 @@ img {
 	text-decoration: none;
 	color: inherit;
 	text-transform: uppercase;
+	white-space: nowrap;
 }
 
 .header__logo {
@@ -94,4 +100,11 @@ img {
 	opacity: 0;
 }
 
+.header__dark-mode-wrapper {
+	--size: 47px;
+	min-width: var(--size);
+	max-width: var(--size);
+	min-height: var(--size);
+	max-height: var(--size);
+}
 /* .header */
